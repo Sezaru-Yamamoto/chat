@@ -9,7 +9,7 @@ import hashlib
 app = Flask(__name__)
 
 app.secret_key = "advpjsh"
-client = MongoClient("mongodb+srv://yamamotoherreracesaralejandro:pip@cluster0.0fkdavr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("mongodb+srv://yamamotoherreracesaralejandro:CIso1Uh9gH0tqpNN@cluster0.0fkdavr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client['Chat']
 
 socketio = SocketIO(app)
