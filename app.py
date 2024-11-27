@@ -9,7 +9,7 @@ import hashlib
 app = Flask(__name__)
 
 app.secret_key = "advpjsh"
-client = MongoClient("mongodb+srv://yamamotoherreracesaralejandro:3W9qIKLCqL3oo7LS@cluster0.0fkdavr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+client = MongoClient("mongodb+srv://yamamotoherreracesaralejandro:pip@cluster0.0fkdavr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 db = client['Chat']
 
 socketio = SocketIO(app)
@@ -148,4 +148,4 @@ def handle_disconnect():
         print('Usuario desconectado, pero no hay sesión activa.')
 
 if __name__ == '__main__':
-    socketio.run(app, debug=True)
+    app.run()
